@@ -1,0 +1,12 @@
+{
+  "name": "@fwoar/js-data-lens",
+  "version": "0.0.0",
+  "description": "Small functional utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["functional","fp","utilities"],
+  "author": "Ed Langley <el-npm@elangley.org>",
+  "license": "Apache v2"
+}
