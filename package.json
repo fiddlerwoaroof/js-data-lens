@@ -1,12 +1,21 @@
 {
   "name": "@fwoar/js-data-lens",
+  "private": false,
+  "type": "module",
   "version": "0.0.0",
   "description": "Small functional utilities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
-  "keywords": ["functional","fp","utilities"],
+  "keywords": [
+    "functional",
+    "fp",
+    "utilities"
+  ],
   "author": "Ed Langley <el-npm@elangley.org>",
-  "license": "Apache v2"
+  "license": "Apache v2",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
 }
