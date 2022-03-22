@@ -252,12 +252,18 @@ export function pickTests({ describe, test, expect }) {
            "September" "October" "November" "December"))
 */
 
-function compress_runsTest({ describe, test, expect }) {
+function compress_runsTest({ describe, test, expect, when }) {
   describe("compress_runs", () => {
     test("works", () => {
-      expect(() => uut.compress_runs()([1, 1, 2, 3, 3, 4, 5, 5])).toEqual([
-        1, 2, 3, 4, 5,
-      ]);
+      when(uut.compress_runs)
+        .isCalledWith([], [[1, 1, 2, 3, 3, 4, 5, 5]])
+        .expect.toEqual([1, 2, 3, 4, 5]);
+
+      when(uut.compress_runs)
+        .isCalledWith([], [[1, 2, 3, 4, 5]])
+        .expect.toEqual([1, 2, 3, 4, 5]);
+
+      when(uut.compress_runs).isCalledWith([], [[]]).expect.toEqual([]);
     });
   });
 }
@@ -325,7 +331,7 @@ function composedTests({ describe, test, expect }) {
 }
 
 /**
- * @param {{ expect: any; test: any; describe: any; }} context
+ * @param {{ expect: any; test: any; describe: any; when: any; }} context
  */
 export function tests(context) {
   [
