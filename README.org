@@ -1,0 +1,12 @@
+* Intro
+
+What is this? Some minimal functional programming utilities imitating
+the api of [[https://github.com/fiddlerwoaroof/dotfiles/blob/master/emacs.d/packages/fwoar-functional-utils.el][fwoar-functional-utils.el]] and [[https://github.com/fiddlerwoaroof/data-lens][data-lens]] to enable easy
+translation of transformations between elisp, common lisp and
+javascript.  These functions all follow the convention where they are
+first called with the "secondary" arguments to the operation and then,
+next, they are called with the data structure to operate on. This enables
+a compositional style, without the overhead of something like Ramda's
+currying.
+
+[[https://github.com/fiddlerwoaroof/js-data-lens][https://raster.shields.io/npm/v/@fwoar/js-data-lens]]
