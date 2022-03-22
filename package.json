@@ -4,6 +4,7 @@
   "type": "module",
   "version": "0.1.0",
   "description": "Small functional utilities",
+  "repository": "https://github.com/fiddlerwoaroof/js-data-lens.git",
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
@@ -17,5 +18,9 @@
   "license": "Apache v2",
   "dependencies": {
     "jest": "^27.5.1"
-  }
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ]
 }
