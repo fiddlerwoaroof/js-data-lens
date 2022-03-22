@@ -9,4 +9,4 @@ next, they are called with the data structure to operate on. This enables
 a compositional style, without the overhead of something like Ramda's
 currying.
 
-[[https://github.com/fiddlerwoaroof/js-data-lens][https://raster.shields.io/npm/v/@fwoar/js-data-lens]]
+[[https://github.com/fiddlerwoaroof/js-data-lens][file:https://img.shields.io/npm/v/@fwoar/js-data-lens]]
