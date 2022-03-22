@@ -2,7 +2,7 @@
   "name": "@fwoar/js-data-lens",
   "private": false,
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small functional utilities",
   "repository": "https://github.com/fiddlerwoaroof/js-data-lens.git",
   "main": "index.js",
