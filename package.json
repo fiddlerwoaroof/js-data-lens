@@ -17,7 +17,7 @@
   "author": "Ed Langley <el-npm@elangley.org>",
   "license": "Apache v2",
   "dependencies": {
-    "jest": "^27.5.1"
+    "jest": "^30.4.2"
   },
   "files": [
     "index.js",
